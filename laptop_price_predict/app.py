@@ -2,9 +2,10 @@ import joblib
 import streamlit as st 
 import pandas as pd 
 
-model=joblib.load("Lr_laptop.pkl")
-scaler=joblib.load("scaler.pkl")
-columns=joblib.load("columns.pkl")
+
+model=joblib.load("laptop_price_prediction/Lr_laptop.pkl")
+scaler=joblib.load("laptop_price_prediction/scaler.pkl")
+columns=joblib.load("laptop_price_prediction/columns.pkl")
 
 st.set_page_config(page_title="laptop price predictor",
                    layout="centered")
