@@ -9,6 +9,7 @@ columns=joblib.load("laptop_price_prediction/columns.pkl")"""
 import os
 import joblib
 import streamlit as st
+import pandas as pd 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
