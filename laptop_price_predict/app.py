@@ -1,11 +1,20 @@
-import joblib 
+"""import joblib 
 import streamlit as st 
 import pandas as pd 
 
 
 model=joblib.load("laptop_price_prediction/Lr_laptop.pkl")
 scaler=joblib.load("laptop_price_prediction/scaler.pkl")
-columns=joblib.load("laptop_price_prediction/columns.pkl")
+columns=joblib.load("laptop_price_prediction/columns.pkl")"""
+import os
+import joblib
+import streamlit as st
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+model = joblib.load(os.path.join(BASE_DIR, "Lr_laptop.pkl"))
+scaler = joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
+columns = joblib.load(os.path.join(BASE_DIR, "columns.pkl"))
 
 st.set_page_config(page_title="laptop price predictor",
                    layout="centered")
